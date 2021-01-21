@@ -159,3 +159,27 @@ body{
     bottom: 0;
     width: 60%;
 }
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: var(--very-dark-magenta);
+    transition: 300ms;
+    margin-top: 5em;
+}
+
+.attribution p {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: .5em;
+    color: hsl(0, 0%, 100%);
+}
+.attribution a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--soft-pink);
+}

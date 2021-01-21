@@ -9,6 +9,8 @@
         height: 100%;
         margin: 0 auto;
         grid-template: 1fr  / 1fr;
+        transform: translateY(0);
+        margin-bottom: 2em;
     }
 
     .caption, .rating, .people-review{
@@ -51,10 +53,6 @@
         transform: translateX(0%);
     }
 
-    .people-review{
-        border: solid 2px rgb(208, 255, 0);
-    }
-
     .review-card{
         border-radius: 5px;
         width: 100%;
@@ -64,5 +62,11 @@
 
     .review-card .desc{
         margin-top: 1em;
+    }
+}
+
+@media only screen and ( max-width: 375px){
+    .attribution{
+        flex-direction: column;
     }
 }
