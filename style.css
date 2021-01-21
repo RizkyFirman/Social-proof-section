@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white:  hsl(0, 0%, 100%);
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --color1: hsl(303, 10%, 53%);
+    --color2: hsl(300, 24%, 96%);
+    --font-family: 'Spartan', sans-serif;
+}
+
+body{
+    max-width: 100vw;
+    height: auto;
+    font-family: var(--font-family);
+}
+
+.container{
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    /* border: solid 1px red; */
+    display: grid;
+    grid-template: repeat(2, 1fr) / 45% auto;
+    transform: translateY(5%);
+}
+
+.caption, .rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--very-dark-magenta);
+    padding: 2rem;
+}
+.caption h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.caption p{
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 1.4em;
+    font-weight: 400;
+}
+
+
+.rating-card{
+    background-color: var(--color2);
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: .5em;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.rating-card:hover{
+    transform: scale(1.1);
+}
+
+.rating-card .star{
+    display: inline-block;
+    margin-right: 1em;
+}
+.rating-card span{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.reviews{
+    transform: translateX(-15%);
+}
+
+.best-tech{
+    transform: translateX(15%);
+}
+
+.people-review{
+    grid-column: 1 / -1;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-card{
+    width: 400px;
+    height: 300px;
+    background-color: var(--very-dark-magenta);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 400ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.review-card:hover{
+    transform: scale(1.1);
+}
+
+.review-card .profile{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.review-card .profile img{
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 1em;
+}
+
+.review-card .profile .profile-name p{
+    margin-top: .2em;
+    color: var(--soft-pink);
+}
+
+.review-card .desc{
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+.card1{
+    transform: translateY(-8%);
+}
+.card3{
+    transform: translateY(8%);
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-top{
+    top: 0;
+    left: 0;
+    width: 40%;
+}
+
+.bg-bottom{
+    right: 0;
+    bottom: 0;
+    width: 60%;
+}
