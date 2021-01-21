@@ -4,14 +4,6 @@
         width: 100vw;
         height: auto;
     }
-    
-    .bg-top{
-        width: 100%;
-    }
-    
-    .bg-bottom{
-        width: 100%;
-    }
 
     .container{
         width: 100%;
@@ -71,5 +63,11 @@
 
     .review-card .desc{
         margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .bg-top, .bg-bottom{
+        width: 100%;
     }
 }
